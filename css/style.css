@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-image: url(../images/bg.jpg);
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  font-size: 2.5em;
+}
+
+.galerie {
+  margin-left: 10%;
+  transition: transform 1s filter 1s;
+}
+
+.galerie:hover img:not(:hover) {
+  filter: grayscale(2);
+  transform: scale(0.9);
+}
+
+.galerie img {
+  border: 2px solid white;
+  width: 150px;
+  height: 150px;
+  flex-grow: 1;
+  transition: transform 1s, filter 1s;
+}
+
+.galerie img:hover {
+  -webkit-transform: scale(1.25);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.25);
+  /* Firefox */
+  -ms-transform: scale(1.25);
+  /* IE 9 */
+  -o-transform: scale(1.25);
+  /* Opera */
+  transform: scale(1.25);
+  filter: brightness(1.5);
+  border-radius: 15%;
+}
+
+
+/*
+@keyframes fade {
+  From {
+    filter: grayscale(0%);
+  }
+
+  To {
+    filter: grayscale(100%);
+  }
+
+}
+
+
+
+
+
+
+
+/*
+img:hover {
+  width: 320px;
+  height: 232px;
+  margin: 10px;
+  opacity: 0.33;
+
+}*/
+
+
+/*@keyframes mon-animation {}
+
+@keyframes fade {
+  From {
+    Opacity: 1;
+  }
+
+  To {
+    Opacity: 0;
+  }
+
+}
+*/
